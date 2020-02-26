@@ -1,0 +1,24 @@
+{
+    "animals": [
+        { "id": 1, "name": "Doodles", "breed": "Poodle"},
+        { "id": 2, "name": "Decker", "breed": "German Shepherd" },
+        { "id": 3, "name": "Esme", "breed": "Pitbull" }
+    ],
+
+    "employees": [
+        {"id": 1, "name": "Kitty Pryde"},
+        {"id": 2, "name": "Monty Python"},
+        {"id": 3, "name": "Kat Fisher"}
+    ],
+
+    "locations": [
+      {"id": 1, "name": "Nashville North"},
+      {"id": 2, "name": "Nashville South"}
+    ],
+
+    "owners": [
+        {"id": 1, "name": "Cruella de Vil", "phoneNumber": "666-666-6660"},
+        {"id": 2, "name": "Juniper Fox", "phoneNumber": "000-000-0000"},
+        {"id": 3, "name": "Wolfgang Puck", "phoneNumber": "123-456-7890"}
+    ]
+}
