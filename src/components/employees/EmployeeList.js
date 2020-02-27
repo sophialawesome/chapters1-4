@@ -21,12 +21,19 @@ const EmployeeList = () => {
   }, []);
 
   // Finally we use map() to "loop over" the employees array to show a list of employee cards
+  
+  const deleteEmployee = id => {
+   EmployeeManager.delete(id)
+      .then(() => EmployeeManager.getAll().then(setEmployees));
+  };
   return (
     <div className="container-cards">
     {employees.map(employee =>
-      <EmployeeCard key={employee.id} employee={employee} />
-    )}
-  </div>
+        <EmployeeCard
+            key={employee.id}
+            employee={employee}
+            deleteEmployee={deleteEmployee} />)}
+</div>
   );
 };
 export default EmployeeList

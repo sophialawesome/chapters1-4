@@ -21,12 +21,18 @@ const OwnerList = () => {
   }, []);
 
   // Finally we use map() to "loop over" the owners array to show a list of owner cards
+  const deleteOwner = id => {
+    OwnerManager.delete(id)
+       .then(() => OwnerManager.getAll().then(setOwners));
+   };
   return (
     <div className="container-cards">
-      {owners.map(owner =>
-        <OwnerCard key={owner.id} owner={owner} />
-      )}
-    </div>
+    {owners.map(owner =>
+        <OwnerCard
+            key={owner.id}
+            owner={owner}
+            deleteOwner={deleteOwner} />)}
+</div>
   );
 };
 export default OwnerList
