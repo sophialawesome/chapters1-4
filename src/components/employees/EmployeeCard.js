@@ -1,4 +1,5 @@
 import React from "react";
+import "./Employee.css";
 
 const EmployeeCard = props => {
   return (
@@ -7,6 +8,7 @@ const EmployeeCard = props => {
         <h3>Name: <span className="card-employeeName">
           {props.employee.name}
         </span></h3>
+        <button type="button" onClick={() => props.deleteEmployee(props.employee.id)}>Fire</button>
       </div>
     </div>
   );
