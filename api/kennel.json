@@ -6,26 +6,17 @@
       "breed": "Poodle"
     },
     {
-      "id": 2,
-      "name": "Esme",
-      "breed": "Pitbull"
-    },
-    {
-        "id": 3,
-        "name": "Baby",
-        "breed": "German Sheperd"
-    },
-    {
-        "id": 4,
-        "name": "Frank",
-        "breed": "Dachshund"
+      "id": 4,
+      "name": "Frank",
+      "breed": "Dachshund"
     }
-],
+  ],
   "employees": [
-      {
-          "id": 1,
-          "name": "Kitty Pryde"
-      }],
+    {
+      "id": 1,
+      "name": "Kitty Pryde"
+    }
+  ],
   "locations": [
     {
       "id": 1,
