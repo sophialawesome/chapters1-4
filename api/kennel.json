@@ -16,14 +16,9 @@
       "breed": "Siberian Husky"
     },
     {
-      "name": "Pluto",
-      "breed": "Golden Retriever",
+      "name": "Cat",
+      "breed": "Dog",
       "id": 6
-    },
-    {
-      "name": "Doggie",
-      "breed": "Dawg",
-      "id": 7
     }
   ],
   "employees": [
@@ -32,12 +27,8 @@
       "name": "Kitty Pryde"
     },
     {
-      "name": "Sophia",
+      "name": "Sophia Law",
       "id": 2
-    },
-    {
-      "name": "A real chill dude",
-      "id": 3
     }
   ],
   "locations": [

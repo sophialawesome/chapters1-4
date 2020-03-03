@@ -1,5 +1,7 @@
-import { Route } from "react-router-dom";
+//import { Route } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import React from "react";
+import Login from "./auth/Login";
 import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
 import EmployeeList from "./employees/EmployeeList";
@@ -17,6 +19,7 @@ import OwnerForm from "./owner/OwnerForm";
 const ApplicationViews = () => {
   return (
     <React.Fragment>
+      <Route path="/login" component={Login} />
       <Route
         exact
         path="/"
