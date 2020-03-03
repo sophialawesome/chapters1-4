@@ -19,6 +19,11 @@
       "name": "Cat",
       "breed": "Dog",
       "id": 6
+    },
+    {
+      "name": "Barry/Beary",
+      "breed": "Bear",
+      "id": 7
     }
   ],
   "employees": [
@@ -29,6 +34,10 @@
     {
       "name": "Sophia Law",
       "id": 2
+    },
+    {
+      "name": "CATherine ",
+      "id": 3
     }
   ],
   "locations": [

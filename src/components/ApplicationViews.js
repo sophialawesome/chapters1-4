@@ -15,8 +15,12 @@ import EmployeeForm from "./employees/EmployeeForm";
 import LocationForm from "./location/LocationForm";
 import OwnerForm from "./owner/OwnerForm";
 
+const isAuthenticated = () => sessionStorage.getItem("") !== null;
+
 const ApplicationViews = () => {
+
   return (
+
     <React.Fragment>
       <Route path="/login" component={Login} />
       <Route
@@ -26,11 +30,16 @@ const ApplicationViews = () => {
           return <Home {...props} />;
         }}
       />
-      <Route
+      
+    <Route
         exact
         path="/animals"
         render={props => {
-          return <AnimalList {...props} />;
+          if (isAuthenticated()) {
+            return <AnimalList {...props} />;
+          } else {
+            return <Redirect to="/login" />;
+          }
         }}
       />
       <Route
