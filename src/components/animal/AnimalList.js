@@ -27,25 +27,30 @@ const AnimalList = props => {
     );
   };
 
-
- return (
+  return (
     <>
-    <section className="section-content">
-    <button type="button"
-        className="btn"
-        onClick={() => props.history.push("/animals/new")}>
-        Admit Animal
-    </button>
-  </section>
-    <div className="container-cards">
-      {animals.map(animal => 
-        <AnimalCard
+      <section className="section-content">
+        <button
+          type="button"
+          className="btn"
+          onClick={() => props.history.push("/animals/new")}
+        >
+          Admit Animal
+        </button>
+      </section>
+      <div className="container-cards">
+        {animals.map(animal => (
+          <AnimalCard
           key={animal.id}
           animal={animal}
           deleteAnimal={deleteAnimal}
-        />
-      )}
-    </div>
+          {...props}
+          />
+  
+        ))}
+    
+      </div>
+      
     </>
   );
 };
