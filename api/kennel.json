@@ -10,23 +10,44 @@
       "name": "Frank",
       "breed": "Dachshund"
     },
-
     {
       "id": 5,
       "name": "balto",
       "breed": "Siberian Husky"
+    },
+    {
+      "name": "Pluto",
+      "breed": "Golden Retriever",
+      "id": 6
+    },
+    {
+      "name": "Doggie",
+      "breed": "Dawg",
+      "id": 7
     }
   ],
   "employees": [
     {
       "id": 1,
       "name": "Kitty Pryde"
+    },
+    {
+      "name": "Sophia",
+      "id": 2
+    },
+    {
+      "name": "A real chill dude",
+      "id": 3
     }
   ],
   "locations": [
     {
       "id": 1,
       "name": "Nashville North"
+    },
+    {
+      "name": "Nashville South",
+      "id": 2
     }
   ],
   "owners": [
@@ -39,6 +60,11 @@
       "id": 2,
       "name": "Juniper Fox",
       "phoneNumber": "000-000-0000"
+    },
+    {
+      "name": "Virginia Wolf",
+      "phoneNumber": "123-456-7890",
+      "id": 3
     }
   ]
 }
