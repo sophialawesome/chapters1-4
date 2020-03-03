@@ -17,8 +17,9 @@ import OwnerForm from "./owner/OwnerForm";
 import AnimalEditForm from "./animal/AnimalEditForm";
 import EmployeeEditForm from "./employees/EmployeeEditForm";
 import LocationEditForm from "./location/LocationEditForm";
+import OwnerEditForm from "./owner/OwnerEditForm";
 
-const isAuthenticated = () => sessionStorage.getItem("") !== null;
+const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
 
 const ApplicationViews = () => {
   return (
@@ -57,6 +58,13 @@ const ApplicationViews = () => {
           return <LocationList {...props} />;
         }}
       />
+      <Route
+        exact
+        path="/owners"
+        render={props => {
+          return <OwnerList {...props} />;
+        }}
+      />
 
       {/*
   This is a new route to handle a URL with the following pattern:
@@ -91,13 +99,6 @@ const ApplicationViews = () => {
         }}
       />
 
-      <Route
-        exact
-        path="/owners"
-        render={props => {
-          return <OwnerList {...props} />;
-        }}
-      />
       <Route
         exact
         path="/owners/:ownerId(\d+)"
@@ -186,6 +187,48 @@ const ApplicationViews = () => {
         render={props => {
           if (isAuthenticated()) {
             return <LocationEditForm {...props} />;
+          } else {
+            return <Redirect to="/login" />;
+          }
+        }}
+      />
+      <Route
+        exact
+        path="/locations/:locationId(\d+)"
+        render={props => {
+          if (isAuthenticated()) {
+            return (
+              <LocationDetail
+                locationId={parseInt(props.match.params.locationId)}
+                {...props}
+              />
+            );
+          } else {
+            return <Redirect to="/login" />;
+          }
+        }}
+      />
+      <Route
+        path="/owners/:ownerId(\d+)/edit"
+        render={props => {
+          if (isAuthenticated()) {
+            return <OwnerEditForm {...props} />;
+          } else {
+            return <Redirect to="/login" />;
+          }
+        }}
+      />
+      <Route
+        exact
+        path="/owners/:ownerId(\d+)"
+        render={props => {
+          if (isAuthenticated()) {
+            return (
+              <OwnerDetail
+                ownerId={parseInt(props.match.params.ownerId)}
+                {...props}
+              />
+            );
           } else {
             return <Redirect to="/login" />;
           }

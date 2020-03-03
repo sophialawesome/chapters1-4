@@ -13,17 +13,17 @@
     {
       "id": 5,
       "name": "balto",
-      "breed": "Siberian Husky"
+      "breed": "Alaskan Malamute"
     },
     {
+      "id": 6,
       "name": "Cat",
-      "breed": "Dog",
-      "id": 6
+      "breed": "Cat-Dog"
     },
     {
+      "id": 7,
       "name": "Barry/Beary",
-      "breed": "Bear",
-      "id": 7
+      "breed": "Bear-Dog"
     }
   ],
   "employees": [
@@ -34,10 +34,6 @@
     {
       "name": "Sophia Law",
       "id": 2
-    },
-    {
-      "name": "CATherine ",
-      "id": 3
     },
     {
       "name": "Mona Lox",
@@ -60,6 +56,10 @@
     {
       "name": "Nashville South",
       "id": 2
+    },
+    {
+      "name": "Nashville East",
+      "id": 3
     }
   ],
   "owners": [
@@ -70,13 +70,13 @@
     },
     {
       "id": 2,
-      "name": "Juniper Fox",
+      "name": "Some Dog Fanatic",
       "phoneNumber": "000-000-0000"
     },
     {
-      "name": "Virginia Wolf",
-      "phoneNumber": "123-456-7890",
-      "id": 3
+      "id": 3,
+      "name": "Mona Octocat",
+      "phoneNumber": "123-456-7890"
     }
   ]
 }
