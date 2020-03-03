@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import React from "react";
 import "./Animal.css";
 
-
 const AnimalCard = props => {
   return (
     <div className="card">
@@ -24,6 +23,12 @@ const AnimalCard = props => {
           <button>Details</button>
         </Link>
       </div>
+      <button
+        type="button"
+        onClick={() => props.history.push(`/animals/${props.animal.id}/edit`)}
+      >
+        Edit
+      </button>
     </div>
   );
 };
