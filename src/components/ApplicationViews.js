@@ -14,10 +14,6 @@ import AnimalForm from "./animal/AnimalForm";
 import EmployeeForm from "./employees/EmployeeForm";
 import LocationForm from "./location/LocationForm";
 import OwnerForm from "./owner/OwnerForm";
-import Login from "./auth/Login";
-
-
-const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
 
 const ApplicationViews = () => {
   return (
@@ -34,11 +30,7 @@ const ApplicationViews = () => {
         exact
         path="/animals"
         render={props => {
-          if (isAuthenticated()) {
-            return <AnimalList {...props} />;
-          } else {
-            return <Redirect to="/login" />;
-          }
+          return <AnimalList {...props} />;
         }}
       />
       <Route
