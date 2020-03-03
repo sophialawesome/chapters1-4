@@ -10,23 +10,35 @@
       "name": "Frank",
       "breed": "Dachshund"
     },
-
     {
       "id": 5,
       "name": "balto",
       "breed": "Siberian Husky"
+    },
+    {
+      "name": "Cat",
+      "breed": "Dog",
+      "id": 6
     }
   ],
   "employees": [
     {
       "id": 1,
       "name": "Kitty Pryde"
+    },
+    {
+      "name": "Sophia Law",
+      "id": 2
     }
   ],
   "locations": [
     {
       "id": 1,
       "name": "Nashville North"
+    },
+    {
+      "name": "Nashville South",
+      "id": 2
     }
   ],
   "owners": [
